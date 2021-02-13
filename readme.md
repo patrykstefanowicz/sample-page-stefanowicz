@@ -1,4 +1,4 @@
-![nature](./gh/nature.png)
+![nature](/gh/nature.png)
 
 # Sample page 
 

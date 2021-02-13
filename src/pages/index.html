@@ -1,153 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
+    <title>Sample Pack Patryk Stefanowicz</title>
 
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <link href="lightbox.min.css" rel="stylesheet" type="text/css" />
+    <script src="lightbox-plus-jquery.min.js"></script>
   </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
+
+  <body class="body">
+    <section class="hero">
+      <nav class="hero__navigation">
+        <a class="hero__navigation-link hero__navigation-link--big"
+          >Grass Studio</a
+        >
+        <div class="hero__navigation-menu">
+          <a class="hero__navigation-link hero__navigation-link--about"
+            >ABOUT</a
+          >
+          <a class="hero__navigation-link hero__navigation-link--trips"
+            >TRIPS</a
+          >
+          <a class="hero__navigation-link hero__navigation-link--gallery"
+            >GALLERY</a
+          >
+          <a class="hero__navigation-link hero__navigation-link--blog">BLOG</a>
+        </div>
+      </nav>
+
+      <div class="hero__text">
+        <p class="hero__text-top hero__text-top--js"></p>
+        <div class="hero__text-bottom">
+          <p class="hero__text-paragraph">
+            We spent three months exploaring lcalnd
+          </p>
+          <button class="hero__text-button hero__text-button--js">
+            <a class="hero__text-link">CHECK IT</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="title">
+      <h1 class="title__heading title__heading--js"></h1>
+      <div class="title__bottom">
+        <p class="title__paragraph">
+          Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur
+          vulputate , ligula lacinia celerisque tempor, lacus lacus ornare ante.
+          Ac egestas est urna sit amet arcu. consequat posuere. Vestibulum ante
+          ipsum primis in faucibus orci luctus et ultrices posuere. Nulla
+          facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate ,
+          ligula lacinia celerisque tempor, lacus lacus.
+        </p>
+        <p class="title__paragraph">
+          Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur
+          vulputate, ligula lacinia celerisque tempor, lacus lacus ornare ante.
+          Egestas est urna sit amet arcu. consequat posuere. Vestibulum ante
+          ipsum primis in faucibus orci luctus et ultrices posuere. Nulla
+          facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate ,
+          ligula lacinia celerisque tempor, lacus. rnare ante.
+        </p>
+      </div>
+    </section>
+
+    <section class="another-title">
+      <h1 class="another-title__heading">Another title</h1>
+      <div class="another-title__bottom">
+        <div class="another-title__image-container">
+          <img
+            class="another-title__image"
+            src="../assets/landscape-tree-horizon-mountain-cloud-plant-1410556-pxhere.com.png"
+          />
+          <div>
+            <p class="another-title__paragraph">
+              Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur
+              vulputate , ligula lacinia celerisque tempor, lacus lacus ornare
+              ante. Ac egestas est urna sit amet arcu. consequat posuere.
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere. Nulla facilisi. Duis aliquet egestas purus in blandit.
+              Curabitur vulputate , ligula lacinia celerisque tempor, lacus
+              lacus ornare ante.
+            </p>
+            <p class="another-title__paragraph">
+              This is how a link looks like. Class aptent taciti sociosqu ad
+              litora torquent per conubia nostra, per inceptos himenaeos. Sed
+              molestie augue sit amet leo consequat posuere. Vestibulum ante
+              ipsum primis in faucibus la lacinia celerisque tempor, lacus lacus
+              ornare anteorci luctus et ultrices posuere.Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos. Sed molestie augue sit amet leo consequat posuere.
+              Vestibulum ante ipsum primis in faucibusorci luctus et ultrices
+              posuere.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <p class="another-title__paragraph">
+            Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur
+            vulputate , ligula lacinia celerisque tempor, lacus lacus ornare
+            ante. Ac egestas est urna sit amet arcu. consequat posuere.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere. Nulla facilisi. Duis aliquet egestas purus in blandit.
+            Curabitur vulputate , ligula lacinia celerisque tempor, lacus lacus
+            ornare ante.
+          </p>
+          <p class="another-title__paragraph">
+            This is how a link looks like. Class aptent taciti sociosqu ad
+            litora torquent per conubia nostra, per inceptos himenaeos. Sed
+            molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum
+            primis in faucibus la lacinia celerisque tempor, lacus lacus ornare
+            anteorci luctus et ultrices posuere.Class aptent taciti sociosqu ad
+            litora torquent per conubia nostra, per inceptos himenaeos. Sed
+            molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum
+            primis in faucibusorci luctus et ultrices posuere.
+          </p>
+        </div>
+      </div>
+      <button class="another-title__button another-title__button--js">
+        READ MORE
+      </button>
+    </section>
+
+    <div class="gallery">
+      <a
+        href="../assets/beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg"
+        data-lightbox="mygallery"
+      >
+        <img
+          class="gallery__img"
+          src="../assets/beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg"
+      /></a>
+      <a
+        href="../assets/grass-field-farm-lawn-meadow-hill-736197-pxhere.com.jpg"
+        data-lightbox="mygallery"
+      >
+        <img
+          class="gallery__img"
+          src="../assets/grass-field-farm-lawn-meadow-hill-736197-pxhere.com.jpg"
+      /></a>
+      <a
+        href="../assets/hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg"
+        data-lightbox="mygallery"
+      >
+        <img
+          class="gallery__img"
+          src="../assets/hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg"
+      /></a>
+      <a
+        href="../assets/landscape-sea-coast-horizon-mountain-snow-1325243-pxhere.com.jpg"
+        data-lightbox="mygallery"
+      >
+        <img
+          class="gallery__img"
+          src="../assets/landscape-sea-coast-horizon-mountain-snow-1325243-pxhere.com.jpg"
+      /></a>
+      <a href="../assets/fotolia_170367715.png" data-lightbox="mygallery"
+        ><img class="gallery__img" src="../assets/fotolia_170367715.png"
+      /></a>
+      <a
+        href="../assets/snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg"
+        data-lightbox="mygallery"
+      >
+        <img
+          class="gallery__img"
+          src="../assets/snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg"
+      /></a>
+      <a
+        href="../assets/landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg"
+        data-lightbox="mygallery"
+      >
+        <img
+          class="gallery__img"
+          src="../assets/landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg"
+      /></a>
+      <a
+        href="../assets/sea-coast-water-ocean-bird-animal-136776-pxhere.com.jpg"
+        data-lightbox="mygallery"
+      >
+        <img
+          class="gallery__img"
+          src="../assets/sea-coast-water-ocean-bird-animal-136776-pxhere.com.jpg"
+      /></a>
+      <a
+        href="../assets/landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg"
+        data-lightbox="mygallery"
+      >
+        <img
+          class="gallery__img"
+          src="../assets/landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg"
+      /></a>
     </div>
+
+    <footer class="footer">All rights reserved Grass Studio</footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
